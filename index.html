@@ -1,1 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo Gamer - O Guia Definitivo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
+    body {
+      background-color: #0f0f12;
+      color: #e0e0e0;
+      line-height: 1.6;
+      padding-bottom: 50px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: #dcdcdc;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    article {
+      background-color: #1a1a24;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      color: #00d2ff;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #00d2ff;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      color: #9d4edd;
+      margin: 20px 0 10px 0;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background-color: #242433;
+    }
+
+    th, td {
+      border: 1px solid #3d3d5c;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #323248;
+      color: #00d2ff;
+    }
+
+    .like-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 25px;
+      padding-top: 15px;
+      border-top: 1px solid #333;
+    }
+
+    .like-btn {
+      background-color: #ff0055;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .like-btn:hover {
+      background-color: #ff3300;
+    }
+
+    .like-btn:active {
+      transform: scale(0.95);
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mundo Gamer Blog</h1>
+    <p>Notícias, história, e-sports e cultura dos jogos eletrônicos</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Artigo 1 -->
+    <article>
+      <h2>A Evolução do Universo Gamer: Do Arcade aos E-sports</h2>
+      
+      <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=900&q=80" alt="Setup Gamer de Computador">
+
+      <p>O universo dos jogos eletrônicos deixou de ser um nicho e se tornou a maior indústria de entretenimento do mundo, ultrapassando o cinema e a música em faturamento. Desde os primeiros experimentos no século XX até as complexas arenas virtuais de hoje, a transformação foi colossal.</p>
+
+      <h3>1. As Origens e os Arcades</h3>
+      <p>Na década de 1970 e 1980, os fliperamas (arcades) dominaram o cenário. Jogos como <em>Space Invaders</em>, <em>Pac-Man</em> e <em>Donkey Kong</em> uniam jovens em salões barulhentos para disputar pontuações máximas.</p>
+
+      <h3>2. As Eras dos Consoles Caseiros</h3>
+      <p>A chegada de consoles como Atari, Nes (Nintendinho), Mega Drive e Super Nintendo trouxe a experiência para dentro de casa. Nos anos 90 e 2000, com a introdução do 3D pelo PlayStation e Nintendo 64, o nível de imersão subiu drasticamente.</p>
+
+      <h3>3. A Revolução do PC e do Multiplayer Online</h3>
+      <p>A expansão da internet permitiu que jogadores do mundo todo se conectassem. Títulos lendários de PC como <em>Counter-Strike</em>, <em>World of Warcraft</em> e <em>Diablo II</em> redefiniram a socialização nos games.</p>
+
+      <div class="like-section">
+        <button class="like-btn" onclick="curtir('like-count-1')">❤️ Curtir</button>
+        <span id="like-count-1">0 curtidas</span>
+      </div>
+    </article>
+
+    <!-- Artigo 2 -->
+    <article>
+      <h2>Categorias de Jogos e o Cenário Competitivo</h2>
+
+      <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80" alt="Arena de E-sports">
+
+      <p>Hoje existem modalidades para todos os gostos. Desde jogos focados em narrativas profundas para um único jogador (Single-player) até grandes competições profissionais com premiações milionárias (E-sports).</p>
+
+      <h3>Principais Gêneros de Games</h3>
+      <table>
+        <tr>
+          <th>Gênero</th>
+          <th>Descrição</th>
+          <th>Exemplos</th>
+        </tr>
+        <tr>
+          <td>MOBA</td>
+          <td>Multiplayer Online Battle Arena; foco em estratégia em equipe.</td>
+          <td>League of Legends, Dota 2</td>
+        </tr>
+        <tr>
+          <td>FPS</td>
+          <td>Tiro em primeira pessoa; exige precisão e reflexos.</td>
+          <td>CS2, Valorant, Call of Duty</td>
+        </tr>
+        <tr>
+          <td>RPG / MMORPG</td>
+          <td>Role-Playing Game; evolução de personagem e exploração.</td>
+          <td>The Witcher 3, World of Warcraft</td>
+        </tr>
+        <tr>
+          <td>Battle Royale</td>
+          <td>Dezenas de jogadores lutam até restar apenas um.</td>
+          <td>Fortnite, PUBG, Free Fire</td>
+        </tr>
+      </table>
+
+      <h3>O Fenômeno dos Jogos Mobile</h3>
+      <p>Os smartphones democratizaram o acesso aos games. Hoje, com aparelhos acessíveis, é possível competir em nível profissional em jogos altamente populares, expandindo a comunidade gamer para públicos que antes não tinham acesso a PCs ou consoles caros.</p>
+
+      <div class="like-section">
+        <button class="like-btn" onclick="curtir('like-count-2')">❤️ Curtir</button>
+        <span id="like-count-2">0 curtidas</span>
+      </div>
+    </article>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Blog Mundo Gamer - Desenvolvido para entusiastas da cultura pop e jogos.</p>
+  </footer>
+
+  <script>
+    // Objeto para armazenar a contagem de curtidas de cada botão
+    const curtidas = {
+      'like-count-1': 0,
+      'like-count-2': 0
+    };
+
+    function curtir(idElemento) {
+      curtidas[idElemento]++;
+      const elementoTexto = document.getElementById(idElemento);
+      
+      if (curtidas[idElemento] === 1) {
+        elementoTexto.innerText = "1 curtida";
+      } else {
+        elementoTexto.innerText = curtidas[idElemento] + " curtidas";
+      }
+    }
+  </script>
+
+</body>
+</html>
